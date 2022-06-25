@@ -1,20 +1,19 @@
 using System;
 
-class RatedR
+class FirstLetterChecker
 {
   static void Main()
   {
-    Console.WriteLine("How old are you?");
-    string stringUserAge = Console.ReadLine();
-    int intUserAge = int.Parse(stringUserAge);
-
-    if (intUserAge >=17)
+    Console.WriteLine("What is your name?");
+    string userName = Console.ReadLine();
+    
+    if (userName.StartsWith("Z"))
     {
-      Console.WriteLine("You can see the movie!");
+      Console.WriteLine("Your name starts with a Z!");
     }
     else
     {
-      Console.WriteLine("I'm sorry, you are too young to see the movie.");
+      Console.WriteLine("Your name does not start with a Z :(");
     }
   }
 }
