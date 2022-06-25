@@ -1,20 +1,16 @@
 using System;
 
-class RatedR
+class HotelCost
 {
   static void Main()
   {
-    Console.WriteLine("How old are you?");
-    string stringUserAge = Console.ReadLine();
-    int intUserAge = int.Parse(stringUserAge);
+    Console.WriteLine("In what season are you booking a stay?");
+    string season = Console.ReadLine();
 
-    if (intUserAge >=17)
-    {
-      Console.WriteLine("You can see the movie!");
-    }
-    else
-    {
-      Console.WriteLine("I'm sorry, you are too young to see the movie.");
-    }
+    Console.WriteLine("On the weekend or a weeknight?");
+    string dayOfWeek = Console.ReadLine();
+
+    bool summer = season == "summer" || "Summer";
+    bool weekend = dayOfWeek == "weekend" || "Weekend";
   }
 }
