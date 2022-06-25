@@ -7,7 +7,7 @@ class FirstLetterChecker
     Console.WriteLine("What is your name?");
     string userName = Console.ReadLine();
     
-    if (userName.StartsWith("Z"))
+    if (userName.StartsWith("Z") || userName.StartsWith("z"))
     {
       Console.WriteLine("Your name starts with a Z!");
     }
